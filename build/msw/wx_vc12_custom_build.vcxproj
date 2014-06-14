@@ -156,22 +156,22 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <PreBuildEvent>
-      <Command>nmake /A /f makefile.vc UNICODE=1 RUNTIME_LIBS=static CPPFLAGS=/MTd BUILD=debug</Command>
+      <Command>nmake.exe -f makefile.vc BUILD=debug</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <PreBuildEvent>
-      <Command>nmake /A /f makefile.vc UNICODE=1 TARGET_CPU=x64 RUNTIME_LIBS=static CPPFLAGS=/MTd BUILD=debug</Command>
+      <Command>nmake.exe -f makefile.vc TARGET_CPU=x64 BUILD=debug</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <PreBuildEvent>
-      <Command>nmake /A /f makefile.vc UNICODE=1 RUNTIME_LIBS=static CPPFLAGS=/MTd BUILD=debug</Command>
+      <Command>nmake.exe -f makefile.vc BUILD=release</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <PreBuildEvent>
-      <Command>nmake /A /f makefile.vc UNICODE=1 TARGET_CPU=x64 RUNTIME_LIBS=static CPPFLAGS=/MTd BUILD=debug</Command>
+      <Command>nmake.exe -f makefile.vc TARGET_CPU=x64 BUILD=release</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DLL Debug|Win32'">
